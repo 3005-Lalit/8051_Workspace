@@ -1,0 +1,31 @@
+C51 COMPILER V9.60.0.0   LED_RUNNING                                                       10/27/2021 19:47:25 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE LED_RUNNING
+OBJECT MODULE PLACED IN .\Objects\led_running.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\led_r
+                    -unning.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\led_running.lst) TABS(2) OBJECT(.\Objects\led_runn
+                    -ing.obj)
+
+line level    source
+
+   1          #include "led_header.h"
+*** ERROR C141 IN LINE 16 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\LED_define.h: syntax err
+             -or near 'port', expected ')'
+*** ERROR C141 IN LINE 4 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\led_header.h: syntax erro
+             -r near 'ms', expected ')'
+*** ERROR C141 IN LINE 5 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\led_header.h: syntax erro
+             -r near 'port', expected ')'
+   2          
+   3          main()
+   4          {
+   5   1      while(1)
+   6   1      {
+   7   2      //  LED_clock();
+   8   2        
+   9   2          LED_anticlock();
+  10   2        
+  11   2      }
+  12   1      }
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  3 ERROR(S)

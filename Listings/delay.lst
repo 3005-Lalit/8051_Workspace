@@ -1,0 +1,33 @@
+C51 COMPILER V9.60.0.0   DELAY                                                             10/27/2021 19:47:24 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE DELAY
+OBJECT MODULE PLACED IN .\Objects\delay.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\delay
+                    -.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\delay.lst) TABS(2) OBJECT(.\Objects\delay.obj)
+
+line level    source
+
+   1           #include "led_header.h"
+*** ERROR C141 IN LINE 16 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\LED_define.h: syntax err
+             -or near 'port', expected ')'
+*** ERROR C141 IN LINE 4 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\led_header.h: syntax erro
+             -r near 'ms', expected ')'
+*** ERROR C141 IN LINE 5 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\led_header.h: syntax erro
+             -r near 'port', expected ')'
+   2             void delay_ms(uint16 ms)
+*** ERROR C141 IN LINE 2 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\delay.c: syntax error nea
+             -r 'ms', expected ')'
+   3          {
+   4   1        unsigned char i;
+   5   1          for(;ms>0;ms--)
+*** ERROR C202 IN LINE 5 OF D:\Study\Vector Code\home\v18be9l1\lalit\8051\Embedded C\class\LED\delay.c: 'ms': undefined 
+             -identifier
+   6   1          {
+   7   2          for(i=250;i>0;i--);
+   8   2          for(i=250;i>0;i--);
+   9   2          }
+  10   1      
+  11   1      }
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  5 ERROR(S)

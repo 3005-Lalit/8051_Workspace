@@ -1,0 +1,133 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/27/2021  19:54:09  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\LED.obj TO .\Objects\LED PRINT (.\Listings\LED.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\LED.obj (LED)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\LED (LED)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0033H     UNIT         ?PR?_DELAY_MS?LED
+            CODE    0833H     0020H     UNIT         ?PR?LED_CLOCK?LED
+            CODE    0853H     001CH     UNIT         ?PR?LED_ANTICLOCK?LED
+            CODE    086FH     000CH     UNIT         ?C_C51STARTUP
+            CODE    087BH     0005H     UNIT         ?PR?MAIN?LED
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\LED (LED)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED
+
+?PR?MAIN?LED
+  +--> ?PR?LED_CLOCK?LED
+
+?PR?LED_CLOCK?LED
+  +--> ?PR?_DELAY_MS?LED
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\LED (LED)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/27/2021  19:54:09  PAGE 2
+
+
+  D:00A0H         PUBLIC        P2
+  C:087BH         PUBLIC        main
+  C:0833H         PUBLIC        LED_clock
+  C:0804H         PUBLIC        _delay_ms
+  C:0853H         PUBLIC        LED_anticlock
+  C:0800H         SYMBOL        L?0018
+  -------         PROC          L?0017
+  -------         ENDPROC       L?0017
+  C:0800H         SYMBOL        L?0018
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        ms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0804H         LINE#         17
+  C:0804H         LINE#         18
+  C:0804H         LINE#         20
+  C:080DH         LINE#         21
+  C:080DH         LINE#         22
+  C:081CH         LINE#         23
+  C:082BH         LINE#         24
+  C:0832H         LINE#         26
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          LED_CLOCK
+  C:0833H         LINE#         28
+  C:0833H         LINE#         29
+  C:0833H         LINE#         30
+  C:0836H         LINE#         31
+  C:0839H         LINE#         32
+  C:083CH         LINE#         33
+  C:0843H         LINE#         34
+  C:0846H         LINE#         35
+  C:0849H         LINE#         36
+  C:084CH         LINE#         37
+  -------         ENDPROC       LED_CLOCK
+  -------         PROC          LED_ANTICLOCK
+  C:0853H         LINE#         39
+  C:0853H         LINE#         40
+  C:0853H         LINE#         41
+  C:0856H         LINE#         42
+  C:0859H         LINE#         43
+  C:085CH         LINE#         44
+  C:085FH         LINE#         45
+  C:0862H         LINE#         46
+  C:0865H         LINE#         47
+  C:0868H         LINE#         48
+  -------         ENDPROC       LED_ANTICLOCK
+  -------         PROC          MAIN
+  C:087BH         LINE#         51
+  C:087BH         LINE#         52
+  C:087BH         LINE#         53
+  C:087BH         LINE#         54
+  C:087BH         LINE#         55
+  C:087EH         LINE#         59
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LED
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/27/2021  19:54:09  PAGE 3
+
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LED_ANTICLOCK?LED
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0074H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=131
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
