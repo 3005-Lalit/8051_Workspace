@@ -1,2 +1,2 @@
-# 8051_Workspace
-All 8051 Project will be here.
+# 89s52_Workspace
+All 89s52 Project will be here.
